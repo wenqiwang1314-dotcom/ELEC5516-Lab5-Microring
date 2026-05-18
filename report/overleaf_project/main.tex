@@ -1,0 +1,69 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=2.3cm]{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{array}
+\usepackage{longtable}
+
+\sisetup{
+  detect-all,
+  separate-uncertainty=true,
+  per-mode=symbol
+}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!55!black,
+  citecolor=blue!55!black,
+  urlcolor=blue!55!black,
+  pdftitle={Integrated Photonics Design of an SOI Microring Resonator Sensor},
+  pdfauthor={Lucas Wang and Group Members}
+}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  frame=single,
+  columns=fullflexible
+}
+
+\title{\textbf{Integrated Photonics Design of an SOI Microring Resonator Sensor}\\
+\large ELEC5516 Electrical and Optical Sensor Design\\
+Lab 5: Integrated Photonics Design - Microring Resonator}
+\author{Lucas Wang and Group Members\\
+School of Electrical and Computer Engineering\\
+The University of Sydney}
+\date{May 2026}
+
+\begin{document}
+\maketitle
+
+\input{sections/00_abstract}
+\tableofcontents
+\newpage
+
+\input{sections/01_introduction}
+\input{sections/02_theory}
+\input{sections/03_interconnect}
+\input{sections/04_fde_analysis}
+\input{sections/05_coupling_design}
+\input{sections/06_varfdtd_verification}
+\input{sections/07_parameter_sweep}
+\input{sections/08_discussion}
+\input{sections/09_conclusion}
+\input{sections/10_appendix}
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}

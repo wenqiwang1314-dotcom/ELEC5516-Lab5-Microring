@@ -1,0 +1,14 @@
+quantity,value,unit,provenance
+waveguide_width,400,nm,Design target from user prompt and lab workflow
+waveguide_height,200,nm,Design target from user prompt and lab workflow
+resonance_wavelength,1550,nm,Design target from user prompt
+target_FSR,26.2,nm,Design target from user prompt
+target_drop_Q,1800,dimensionless,Design target from user prompt
+target_drop_finesse,26,dimensionless,Design target from user prompt
+FWHM_from_Q_target,0.861,nm,lambda_res / Q using target values only
+FWHM_from_finesse_target,1.008,nm,FSR / finesse using target values only
+ring_length_expression,91.698/n_g,um,lambda_res^2/(FSR*n_g); n_g not available from current outputs
+ring_radius_expression,14.594/n_g,um,lambda_res^2/(2*pi*FSR*n_g); n_g not available from current outputs
+target_transmission_amplitude_t,0.9497,dimensionless,"Target-based coupling equation with lambda, FSR, Q; not a simulated result"
+target_cross_coupling_amplitude_k,0.3131,dimensionless,sqrt(1-|t|^2) from target-based |t|; not a simulated result
+target_power_coupling_k_squared,0.0981,dimensionless,|k|^2 from target-based |k|; not a simulated result

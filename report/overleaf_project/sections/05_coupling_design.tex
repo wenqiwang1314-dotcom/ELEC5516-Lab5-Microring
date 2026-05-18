@@ -1,0 +1,32 @@
+\section{Coupling Design}
+The coupling design converts target linewidth and power-transfer behaviour into a directional-coupler geometry. Physically, a smaller bus-ring gap increases evanescent overlap and therefore increases \(|k|\); a larger gap weakens coupling, increases \(|t|\), narrows the linewidth, and may increase \(Q\) and finesse at the cost of lower drop-port efficiency.
+
+Using the target values \(\lambda_{\mathrm{res}}=\SI{1.55}{\micro\metre}\), \(FSR=\SI{0.0262}{\micro\metre}\), and \(Q=1800\), Eq.~\eqref{eq:t-target} can be evaluated after substituting \(L=\lambda^2/(n_g FSR)\), which cancels \(n_g\) in this target-only estimate. This gives
+\begin{equation}
+|t|_{\mathrm{target}} = 0.9497,\qquad
+|k|_{\mathrm{target}} = 0.3131,\qquad
+|k|_{\mathrm{target}}^2 = 0.0981.
+\end{equation}
+These are target-derived coupling estimates, not extracted Lumerical simulation results.
+
+The actual physical coupling length requires
+\(\Delta n = |n_{\mathrm{eff,sym}} - n_{\mathrm{eff,anti}}|\), obtained from an FDE simulation region containing both coupled waveguides. Since no coupled-mode export is available, \(L_c\) remains unavailable.
+
+\begin{table}[H]
+\centering
+\caption{Coupling-design calculation status.}
+\label{tab:coupling-results}
+\begin{tabular}{lll}
+\toprule
+Quantity & Value & Provenance \\
+\midrule
+\(n_{\mathrm{eff,sym}}\) & TODO & Coupled FDE result not available \\
+\(n_{\mathrm{eff,anti}}\) & TODO & Coupled FDE result not available \\
+\(\Delta n\) & TODO & Requires coupled FDE result \\
+\(|t|\) & 0.9497 & Target-based calculation, not simulated \\
+\(|k|\) & 0.3131 & Target-based calculation, not simulated \\
+\(|k|^2\) & 0.0981 & Target-based calculation, not simulated \\
+\(L_c\) & TODO & Requires \(\Delta n\) from coupled FDE \\
+\bottomrule
+\end{tabular}
+\end{table}

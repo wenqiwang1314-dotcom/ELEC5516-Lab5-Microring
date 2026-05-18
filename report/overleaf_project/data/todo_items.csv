@@ -1,0 +1,8 @@
+item,status,reason
+INTERCONNECT through-port transfer function,TODO,No exported INTERCONNECT spectrum or figure was present in results/ or figures/.
+INTERCONNECT drop-port transfer function,TODO,No exported INTERCONNECT spectrum or figure was present in results/ or figures/.
+"Extracted resonance wavelength, FSR, FWHM, Q, finesse",TODO,No numerical peak table or CSV/JSON simulation output was available.
+FDE effective index and group index at 1550 nm,TODO,Original .lms files are binary Lumerical models and could not be solved in this environment.
+Symmetric and anti-symmetric coupled-mode effective indices,TODO,No FDE coupled-mode export was available; Delta n and L_c remain unavailable.
+varFDTD drop-port spectrum and final field profile,TODO,No varFDTD monitor export or image was present.
+"Gap sweep numerical results for 80, 100, 120, and 150 nm",TODO,No sweep data was present in results/.

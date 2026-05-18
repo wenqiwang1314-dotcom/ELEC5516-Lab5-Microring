@@ -1,0 +1,21 @@
+\section{varFDTD Verification}
+varFDTD is a reduced 2.5D time-domain method that uses an effective-index approximation to collapse the 3D SOI geometry into a 2D propagation problem. It is less expensive than full 3D FDTD, while still providing broadband time-domain verification of the final microring layout \cite{labmanual}.
+
+The intended verification outputs are the final device geometry, field profile, through/drop monitor spectra, and effective-index monitor data. The file \path{models_original/ring_resonator_studentv2_varfdtd.lms} is available locally, but no exported varFDTD field image, spectrum, or monitor data was found. Therefore, the comparison table below is structured for completion after simulation export.
+
+\begin{table}[H]
+\centering
+\caption{Comparison of abstraction levels. Only target-derived expressions are filled; missing simulation outputs are marked explicitly.}
+\label{tab:method-comparison}
+\begin{tabular}{lllll}
+\toprule
+Method & Key input & FSR (nm) & \(Q\) & Finesse \\
+\midrule
+INTERCONNECT & Circuit parameters & TODO & TODO & TODO \\
+FDE theory & \(n_g\) and radius & 26.2 target & N/A & N/A \\
+varFDTD & Final device geometry & TODO & TODO & TODO \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+After varFDTD completion, the most important checks are whether the drop-port spectrum reproduces the target FSR near \SI{26.2}{\nano\metre}, whether the resonance linewidth gives the intended \(Q\), and whether the field profile confirms that power is coupled into the ring and transferred to the drop port at resonance.

@@ -1,0 +1,4 @@
+file,relative_path,size_bytes
+generate_report_package.py,scripts/generate_report_package.py,42984
+tectonic-0.16.9-x86_64-pc-windows-msvc.zip,work/tools/tectonic-0.16.9-x86_64-pc-windows-msvc.zip,20035039
+tectonic.exe,work/tools/tectonic.exe,49630208

@@ -1,0 +1,62 @@
+\appendix
+\section{Generated Files and Provenance}
+This appendix summarises the files generated for the Overleaf package and records which numerical values are design targets, target-derived calculations, or missing simulation outputs.
+
+\begin{table}[H]
+\centering
+\caption{Generated figure files included in the Overleaf project.}
+\label{tab:generated-figures}
+\small
+\begin{tabular}{p{0.48\linewidth}p{0.44\linewidth}}
+\toprule
+Figure file & Role \\
+\midrule
+\path{figures/interrogation_principle_schematic.png} & Conceptual resonance-shift interrogation \\
+\path{figures/microring_add_drop_schematic.png} & Conceptual add-drop microring layout \\
+\path{figures/soi_cross_section_schematic.png} & Target SOI cross-section schematic \\
+\path{figures/multilevel_workflow.png} & Multi-level design workflow schematic \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Raw/provenance data files included in the Overleaf project.}
+\label{tab:data-files}
+\small
+\begin{tabular}{p{0.48\linewidth}p{0.44\linewidth}}
+\toprule
+Data file & Content \\
+\midrule
+\path{data/source_inventory.csv} & Source PDF inventory and page counts \\
+\path{data/model_inventory.csv} & Local Lumerical model inventory, not included as models \\
+\path{data/available_outputs_inventory.csv} & Inventory of available result/figure/script/work files \\
+\path{data/target_calculations.csv} & Design targets and formula-derived values \\
+\path{data/todo_items.csv} & Missing simulation outputs and reasons \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Calculation provenance summary.}
+\label{tab:calculation-provenance}
+\begin{tabular}{lll}
+\toprule
+Quantity & Value & Provenance \\
+\midrule
+\(\lambda_{\mathrm{res}}\) & \SI{1550}{\nano\metre} & Design target \\
+\(FSR\) & \SI{26.2}{\nano\metre} & Design target \\
+\(Q\) & 1800 & Design target \\
+\(\mathcal{F}\) & 26 & Design target \\
+\(FWHM\) from \(Q\) & \SI{0.861}{\nano\metre} & \(\lambda/Q\), target-derived \\
+\(FWHM\) from finesse & \SI{1.008}{\nano\metre} & \(FSR/\mathcal{F}\), target-derived \\
+\(L\) & \(\SI{91.70}{\micro\metre}/n_g\) & Requires FDE \(n_g\) \\
+\(r\) & \(\SI{14.59}{\micro\metre}/n_g\) & Requires FDE \(n_g\) \\
+\(|t|\), \(|k|\), \(|k|^2\) & 0.9497, 0.3131, 0.0981 & Target-based only \\
+\(\Delta n\), \(L_c\) & TODO & Requires coupled FDE \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The script used to create the package is \path{scripts/generate_report_package.py}. It generated the project structure, provenance CSV files, conceptual figures, LaTeX section files, and README. It did not modify \path{models_original/}.

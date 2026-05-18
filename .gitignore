@@ -1,0 +1,19 @@
+# Local tool/cache files
+/work/tools/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# LaTeX build artefacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+

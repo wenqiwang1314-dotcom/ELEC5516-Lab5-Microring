@@ -1,0 +1,20 @@
+\section{Parameter Sweep}
+The preferred open-ended analysis is a gap sweep over representative bus-ring gaps of \SI{80}{\nano\metre}, \SI{100}{\nano\metre}, \SI{120}{\nano\metre}, and \SI{150}{\nano\metre}. No numerical sweep data was found in \path{results/}, so the section is presented as a qualitative design discussion and a TODO table.
+
+\begin{table}[H]
+\centering
+\caption{Gap sweep template. Numerical entries require exported FDE, INTERCONNECT, or varFDTD sweep data.}
+\label{tab:gap-sweep}
+\begin{tabular}{lllll}
+\toprule
+Gap (nm) & \(|k|^2\) & FSR (nm) & \(Q\) & Drop-port comment \\
+\midrule
+80 & TODO & TODO & TODO & Not available from current simulation output \\
+100 & TODO & TODO & TODO & Not available from current simulation output \\
+120 & TODO & TODO & TODO & Not available from current simulation output \\
+150 & TODO & TODO & TODO & Not available from current simulation output \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The expected physical trend is that increasing the gap reduces evanescent coupling, so \(|k|\) decreases and \(|t|\) increases. Weaker coupling generally narrows the resonance linewidth and can increase \(Q\) and finesse, but it may also reduce drop-port efficiency and make the sensor response more sensitive to fabrication error and loss. Conversely, a smaller gap increases coupling and drop-port transfer but can broaden the resonance.

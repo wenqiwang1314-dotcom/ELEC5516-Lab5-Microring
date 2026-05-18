@@ -1,0 +1,24 @@
+\section{Introduction}
+Integrated photonic sensors exploit guided optical fields whose phase, amplitude, or resonance spectrum changes when a physical or chemical measurand perturbs the optical path. A microring resonator is especially attractive because a compact ring stores optical energy over many round trips, converting small effective-index changes into measurable resonance wavelength shifts.
+
+The design platform considered in this laboratory is silicon-on-insulator (SOI). SOI is suitable for integrated photonic sensing because it is compatible with mature CMOS-style fabrication, provides high refractive-index contrast between silicon and silicon dioxide, supports strong optical confinement, and enables compact photonic circuits. In a sensor implementation, external refractive index, temperature, strain, or biochemical binding can change the guided effective index \(n_{\mathrm{eff}}\) or the round-trip optical path length. The resonance wavelength then shifts, enabling the measurand to be inferred from spectral or intensity interrogation.
+
+The laboratory notes define an open-ended design task in which the ring is first modelled at circuit level in INTERCONNECT and then refined using MODE/FDE and varFDTD \cite{labmanual}. This report follows that workflow while preserving a clear distinction between design targets, formula-derived values, and unavailable simulation outputs.
+
+\begin{table}[H]
+\centering
+\caption{Design targets used in this report. These are targets, not measured simulation outputs.}
+\label{tab:design-targets}
+\begin{tabular}{lll}
+\toprule
+Quantity & Target value & Source \\
+\midrule
+SOI waveguide width & \SI{400}{\nano\metre} & Design brief \\
+SOI waveguide height & \SI{200}{\nano\metre} & Design brief \\
+Resonance wavelength region & near \SI{1550}{\nano\metre} & Design brief \\
+FSR & \SI{26.2}{\nano\metre} & Design brief \\
+Drop-port \(Q\) factor & approximately 1800 & Design brief \\
+Drop-port finesse & approximately 26 & Design brief \\
+\bottomrule
+\end{tabular}
+\end{table}
